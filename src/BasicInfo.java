@@ -26,8 +26,8 @@ public class BasicInfo {
         this.email = email;
     }
 
-    public String getDisplayText(){
-        String displayText ="Name: " +getName()+ "\nEmail Address" + getEmail();
-        return displayText;
+    public String getDisplayInfo(){
+        String displayInfo = getName()+ "\n" + getEmail();
+        return displayInfo;
     }
 }

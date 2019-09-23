@@ -1,16 +1,16 @@
-public class EducationInfo {
+public class Education {
     private String degree;
     private String major;
-    private String univerity;
+    private String university;
     private int year;
 
-    public EducationInfo() {
+    public Education() {
     }
 
-    public EducationInfo(String degree, String major, String univerity, int year) {
+    public Education(String degree, String major, String university, int year) {
         this.degree = degree;
         this.major = major;
-        this.univerity = univerity;
+        this.university = university;
         this.year = year;
     }
 
@@ -30,12 +30,12 @@ public class EducationInfo {
         this.major = major;
     }
 
-    public String getUniverity() {
-        return univerity;
+    public String getUniversity() {
+        return university;
     }
 
-    public void setUniverity(String univerity) {
-        this.univerity = univerity;
+    public void setUniversity(String university) {
+        this.university = university;
     }
 
     public int getYear() {
@@ -45,10 +45,10 @@ public class EducationInfo {
     public void setYear(int year) {
         this.year = year;
     }
-    public String getDisplayText() {
-        String displayText = "Degree type (Associate's, Bachelor's, Master's, PhD, etc.): " + getDegree() + "\nMajor: " +
-                "\nUniversity Name" + getUniverity() + "\nGraduation Year " + getYear();
-        return displayText;
+    public String getDisplayEdu() {
+        String displayEdu = getDegree() +
+                "\n" + getUniversity() + ", " + getYear();
+        return displayEdu;
     }
 }
 

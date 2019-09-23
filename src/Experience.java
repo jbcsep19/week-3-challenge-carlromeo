@@ -1,4 +1,4 @@
-public class WorkInfo {
+public class Experience {
 
     private String company;
     private String title;
@@ -6,10 +6,10 @@ public class WorkInfo {
     private int end;
     private String description;
 
-    public WorkInfo() {
+    public Experience() {
     }
 
-    public WorkInfo(String company, String title, int start, int end, String description) {
+    public Experience(String company, String title, int start, int end, String description) {
         this.company = company;
         this.title = title;
         this.start = start;
@@ -57,14 +57,17 @@ public class WorkInfo {
         this.description = description;
     }
 
-    public String getDisplayText() {
-        String displayText = "Company: " + getCompany() +
-                             "\n Job Title: " + getTitle() +
-                             "\n Start Date: " + getStart() +
-                             "\n End Date: " + getEnd() +
-                             "\n Description" + getDescription();
-        return displayText;
+    public void add(String description) {
+    }
+
+    public String getDisplayEx() {
+        String displayEx = getCompany() +
+                             "\n" + getTitle() +
+                             "\n" + getStart() +  " " + "- " + getEnd() +
+                             "\n" + getDescription();
+        return displayEx;
 
     }
+
 
 }
